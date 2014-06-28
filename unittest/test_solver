@@ -1,0 +1,35 @@
+import unittest
+from random import randint
+from Solver import Solver
+
+__author__ = 'TOANTV'
+
+
+class TestSolver(unittest.TestCase):
+    def setUp(self):
+        self.solver = Solver()
+
+    def test_demo(self):
+        a = 1
+        b = -7
+        c = 2
+        self.solver.demo(a, b, c)
+
+    def test_demo_sum(self):
+        self.solver.demo_sum(2, 5, 6)
+        assert self.solver.demo_sum(2, 5, 7)
+
+    def test_IsOdd(self):
+        self.solver.IsOdd(5)
+        #check value return with another value
+        self.assertEquals(self.solver.IsOdd(5), True)
+        assert self.solver.IsOdd(5) == True
+
+        int_random = randint(2, 10)
+        print int_random
+        self.assertTrue(self.solver.IsOdd(int_random))
+
+
+if __name__ == '__main__':
+    unittest.main()
+
