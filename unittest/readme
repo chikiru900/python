@@ -1,0 +1,20 @@
+http://docs.python-guide.org/en/latest/writing/tests/
+http://pytest.org/latest/pytest.pdf
+
+Method:
+1. assertXXX()
+-Các phương thức dạng assertXXX sẽ kiểm tra các điều kiện khác nhau
++ Boolean assertEquals(): So sánh hai giá trị để kiểm tra bằng nhau. Phép thử thất bại nếu hai giá trị không bằng nhau.
++ Boolean assertFalse(): Đánh giá biểu thức logic. Phép thử thất bại nếu biểu thức đúng.
++ Boolean assertNotNull(): So sánh tham chiếu của một đối tượng với Null. Phép thử thất bại nếu tham chiếu đối tượng Null.
++ Boolean assertNotSame(): So sánh địa chỉ vùng nhớ của hai tham chiếu hai đối tượng bằng cách sử dụng toán tử ==. Phép thử thất bại trả về nếu cả hai đều tham chiếu đến cùng một đối tượng.
++ Boolean assertNull(): So sánh tham chiếu của một đối tượng với giá trị Null. Phép thử thất bại nếu đối tượng không là Null.
++ Boolean assertSame(): So sánh địa chỉ vùng nhớ của hai tham chiếu đối tượng bằng cách sử dụng toán tử ==. Phép thử thất bại nếu cả hai không tham chiếu đến cùng một đối tượng.
++ Boolean assertTrue(): Đánh giá một biểu thức logic. Phép thử thất bại nếu biểu thức sai.
++ void fail(): Phương thức này làm cho test hiện tại thất bại, phương thức này thường được sử dụng khi xử lý các ngoại lệ.
+
+2. using unittest:
+
+3. using pytest:
+  Use: python -m pytest -v filename
+  
